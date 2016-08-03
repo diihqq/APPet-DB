@@ -227,6 +227,22 @@ CREATE TABLE IF NOT EXISTS `Compromisso` (
     ON UPDATE CASCADE);
 
 -- -----------------------------------------------------
+-- Table `Desaparecimento`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `Desaparecimento` ;
+
+CREATE TABLE IF NOT EXISTS `Desaparecimento` (
+  `idDesaparecimento` INT NOT NULL,
+  `DataDesaparecimento` DATE NOT NULL,
+  `idAnimal` INT NOT NULL,
+  PRIMARY KEY (`idDesaparecimento`),
+  CONSTRAINT `fk_Desaparecimento_Localizacao1`
+    FOREIGN KEY (`idAnimal`)
+    REFERENCES `Animal` (`idAnimal`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE);
+	
+-- -----------------------------------------------------
 -- Table `Localizacao`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `Localizacao` ;
@@ -235,27 +251,11 @@ CREATE TABLE IF NOT EXISTS `Localizacao` (
   `idLocalizacao` INT NOT NULL,
   `Latitude` VARCHAR(45) NOT NULL,
   `Longitude` VARCHAR(45) NOT NULL,
-  `idAnimal` INT NOT NULL,
-  PRIMARY KEY (`idLocalizacao`),
-  CONSTRAINT `fk_Localizacao_Animal1`
-    FOREIGN KEY (`idAnimal`)
-    REFERENCES `Animal` (`idAnimal`)
-    ON DELETE CASCADE
-    ON UPDATE CASCADE);
-
--- -----------------------------------------------------
--- Table `Desaparecimento`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `Desaparecimento` ;
-
-CREATE TABLE IF NOT EXISTS `Desaparecimento` (
   `idDesaparecimento` INT NOT NULL,
-  `DataDesaparecimento` DATE NOT NULL,
-  `idLocalizacao` INT NOT NULL,
-  PRIMARY KEY (`idDesaparecimento`),
-  CONSTRAINT `fk_Desaparecimento_Localizacao1`
-    FOREIGN KEY (`idLocalizacao`)
-    REFERENCES `Localizacao` (`idLocalizacao`)
+  PRIMARY KEY (`idLocalizacao`),
+  CONSTRAINT `fk_Localizacao_Desaparecimento1`
+    FOREIGN KEY (`idDesaparecimento`)
+    REFERENCES `Desaparecimento` (`idDesaparecimento`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
 
