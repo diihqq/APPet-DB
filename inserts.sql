@@ -1,0 +1,18 @@
+INSERT INTO Usuario VALUES(1,'Felipe','felipe@email.com','39393939','cidade','bairro');
+INSERT INTO Notificacao VALUES(1,'Mensagem de notificação',1);
+INSERT INTO EstabelecimentoFavorito VALUES(1,"Estabelecimento",'393939','383838',1);
+INSERT INTO Dispositivo VALUES(1,"Chave API",'IMEI',1,1);
+INSERT INTO Alteracao VALUES(1,1,TRUE,'Notificacao','2016-08-02 00:00:00',1);
+INSERT INTO Especie VALUES(1,'Especie');
+INSERT INTO Raca VALUES(1,'Raça','Raça',1);
+INSERT INTO Animal VALUES(1,'Spyke','Macho','Branco','Grande',3,'Característica','QRCode',1,1,1);
+INSERT INTO Foto VALUES(1,'Caminho da foto',1);
+INSERT INTO Localizacao VALUES(1,'13123154','3135433',1);
+INSERT INTO Desaparecimento VALUES(1,'2016-08-02 00:00:00',1);
+INSERT INTO Alerta VALUES(1,'Alto',1);
+INSERT INTO Alerta VALUES(2,'Médio',2);
+INSERT INTO Alerta VALUES(3,'Baixo',3);
+INSERT INTO Evento VALUES(1,'Evento','Observações',TRUE,1,1,'Vacina');
+INSERT INTO Medicamento VALUES(1,'2016-08-02 00:00:00','2016-08-02 00:00:00',1,1);
+INSERT INTO Vacina VALUES(1,TRUE,'2016-08-02 00:00:00','2016-08-02 00:00:00',1,1);
+INSERT INTO Compromisso VALUES(1,'Local','564654654','5464454','2016-08-02 00:00:00');
