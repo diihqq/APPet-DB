@@ -81,7 +81,7 @@ DROP TABLE IF EXISTS `Raca` ;
 CREATE TABLE IF NOT EXISTS `Raca` (
   `idRaca` INT NOT NULL,
   `Nome` VARCHAR(45) NOT NULL,
-  `Descrição` VARCHAR(1000) NULL,
+  `Descricao` VARCHAR(1000) NULL,
   `idEspecie` INT NOT NULL,
   PRIMARY KEY (`idRaca`),
   CONSTRAINT `fk_Raca_Especie1`
