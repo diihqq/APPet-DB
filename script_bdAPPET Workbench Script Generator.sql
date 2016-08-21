@@ -268,7 +268,7 @@ CREATE TABLE IF NOT EXISTS `Dispositivo` (
   `idDispositivo` INT NOT NULL,
   `ChaveAPI` VARCHAR(32) NOT NULL,
   `IMEI` VARCHAR(16) NOT NULL,
-  `Principal` INT NOT NULL,
+  `Principal` BOOLEAN NOT NULL DEFAULT FALSE,
   `idUsuario` INT NOT NULL,
   PRIMARY KEY (`idDispositivo`),
   CONSTRAINT `fk_Dispositivo_Usuario1`
