@@ -11,7 +11,7 @@
 -- Database `appet`
 -- -----------------------------------------------------
 DROP DATABASE IF EXISTS `appet`;
-CREATE DATABASE IF NOT EXISTS `appet`;
+CREATE DATABASE IF NOT EXISTS `appet` DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 USE `appet`;
 
 -- -----------------------------------------------------
