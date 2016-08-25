@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `EstabelecimentoFavorito` (
     REFERENCES `Usuario` (`idUsuario`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
-
+	
 -- -----------------------------------------------------
 -- Table `Especie`
 -- -----------------------------------------------------
@@ -81,7 +81,7 @@ DROP TABLE IF EXISTS `Raca` ;
 CREATE TABLE IF NOT EXISTS `Raca` (
   `idRaca` INT NOT NULL,
   `Nome` VARCHAR(45) NOT NULL,
-  `Descricao` VARCHAR(1000) NULL,
+  `Descrição` VARCHAR(1000) NULL,
   `idEspecie` INT NOT NULL,
   PRIMARY KEY (`idRaca`),
   CONSTRAINT `fk_Raca_Especie1`
@@ -236,12 +236,12 @@ CREATE TABLE IF NOT EXISTS `Desaparecimento` (
   `DataDesaparecimento` DATE NOT NULL,
   `idAnimal` INT NOT NULL,
   PRIMARY KEY (`idDesaparecimento`),
-  CONSTRAINT `fk_Desaparecimento_Localizacao1`
+  CONSTRAINT `fk_Desaparecimento_Animal1`
     FOREIGN KEY (`idAnimal`)
     REFERENCES `Animal` (`idAnimal`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
-	
+
 -- -----------------------------------------------------
 -- Table `Localizacao`
 -- -----------------------------------------------------
@@ -268,7 +268,7 @@ CREATE TABLE IF NOT EXISTS `Dispositivo` (
   `idDispositivo` INT NOT NULL,
   `ChaveAPI` VARCHAR(32) NOT NULL,
   `IMEI` VARCHAR(16) NOT NULL,
-  `Principal` BOOLEAN NOT NULL DEFAULT FALSE,
+  `Principal` TINYINT(1) NOT NULL DEFAULT 0,
   `idUsuario` INT NOT NULL,
   PRIMARY KEY (`idDispositivo`),
   CONSTRAINT `fk_Dispositivo_Usuario1`
@@ -295,4 +295,3 @@ CREATE TABLE IF NOT EXISTS `Alteracao` (
     REFERENCES `Dispositivo` (`idDispositivo`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
-

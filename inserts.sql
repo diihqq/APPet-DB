@@ -1,7 +1,7 @@
 INSERT INTO Usuario VALUES(1,'Felipe','felipe@email.com','39393939','cidade','bairro');
 INSERT INTO Notificacao VALUES(1,'Mensagem de notificação',1);
 INSERT INTO EstabelecimentoFavorito VALUES(1,"Estabelecimento",'393939','383838',1);
-INSERT INTO Dispositivo VALUES(1,"Chave API",'IMEI',TRUE,1);
+INSERT INTO Dispositivo VALUES(1,"Chave API",'IMEI',1,1);
 INSERT INTO Alteracao VALUES(1,1,TRUE,'Notificacao','2016-08-02 00:00:00',1);
 INSERT INTO Especie VALUES(1,'Cachorro'), (2, 'Gato'), (3, 'Coelho');
 INSERT INTO Raca VALUES
