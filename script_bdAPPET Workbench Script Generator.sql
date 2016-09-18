@@ -104,6 +104,7 @@ CREATE TABLE IF NOT EXISTS `Animal` (
   `Idade` INT NOT NULL,
   `Caracteristicas` VARCHAR(2000) NULL,
   `QRCode` VARCHAR(5000) NOT NULL,
+  `Foto` VARCHAR(5000) NOT NULL,
   `Desaparecido` TINYINT(1) NOT NULL DEFAULT 0,
   `idUsuario` INT NOT NULL,
   `idRaca` INT NOT NULL,
