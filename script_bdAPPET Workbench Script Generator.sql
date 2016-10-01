@@ -38,6 +38,8 @@ CREATE TABLE IF NOT EXISTS `Notificacao` (
   `idNotificacao` INT NOT NULL AUTO_INCREMENT,
   `Mensagem` VARCHAR(1000) NULL,
   `idUsuario` INT NOT NULL,
+  `Notificada` TINYINT(1) NOT NULL DEFAULT 0,
+  `Lida` TINYINT(1) NOT NULL DEFAULT 0,
   PRIMARY KEY (`idNotificacao`),
   CONSTRAINT `fk_Notificacao_Usuario1`
     FOREIGN KEY (`idUsuario`)
