@@ -108,6 +108,8 @@ CREATE TABLE IF NOT EXISTS `Animal` (
   `QRCode` VARCHAR(5000) NOT NULL,
   `Foto` VARCHAR(5000) NOT NULL,
   `Desaparecido` TINYINT(1) NOT NULL DEFAULT 0,
+  `FotoCarteira` VARCHAR(5000) NULL,
+  `DataFotoCarteira` DATE NULL,
   `idUsuario` INT NOT NULL,
   `idRaca` INT NOT NULL,
   PRIMARY KEY (`idAnimal`),

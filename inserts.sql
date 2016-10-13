@@ -258,7 +258,7 @@ INSERT INTO Raca VALUES
 (251,'York Chocolate',NULL,2),
 (252,'Yorkshire Terrier',NULL,1);
 
-INSERT INTO Animal VALUES(1,'Spyke','Macho','Branco','Grande',3,'Característica','QRCode','Foto',1,1,1);
+INSERT INTO Animal VALUES(1,'Spyke','Macho','Branco','Grande',3,'Característica','QRCode','Foto',1,'Foto2','2016-10-02 00:00:00',1,1);
 INSERT INTO Foto VALUES(1,'Caminho da foto',1);
 INSERT INTO Desaparecimento VALUES(1,'2016-08-02 00:00:00',1);
 INSERT INTO Localizacao VALUES(1,'13123154','3135433',1);
