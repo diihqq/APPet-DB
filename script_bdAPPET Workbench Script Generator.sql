@@ -58,6 +58,8 @@ CREATE TABLE IF NOT EXISTS `EstabelecimentoFavorito` (
   `Latitude` VARCHAR(45) NOT NULL,
   `Longitude` VARCHAR(45) NOT NULL,
   `idUsuario` INT NOT NULL,
+  `Tipo` VARCHAR(45) NOT NULL,
+  `Endereco` VARCHAR(255) NOT NULL,
   PRIMARY KEY (`idEstabelecimentoFavorito`),
   CONSTRAINT `fk_EstabelecimentoFavorito_Usuario1`
     FOREIGN KEY (`idUsuario`)
