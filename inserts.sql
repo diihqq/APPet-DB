@@ -1,6 +1,11 @@
 ﻿INSERT INTO Usuario VALUES(1,'Felipe','felipe@email.com','39393939','cidade','bairro');
+<<<<<<< HEAD
 INSERT INTO Notificacao VALUES(1,'Mensagem de notificação','2016-10-20 14:00:00',1,0,0);
 INSERT INTO EstabelecimentoFavorito VALUES(1,"Estabelecimento",'393939','383838',1);
+=======
+INSERT INTO Notificacao VALUES(1,'Mensagem de notificação',1,0,0);
+INSERT INTO EstabelecimentoFavorito VALUES(1,"Estabelecimento",'393939','383838',1,"Clínica Veterinária","Rua 1");
+>>>>>>> origin/master
 INSERT INTO Dispositivo VALUES(1,"Chave API",'IMEI',1,1);
 INSERT INTO Alteracao VALUES(1,1,TRUE,'Notificacao','2016-08-02 00:00:00',1);
 INSERT INTO Especie VALUES(1,'Cachorro'), (2, 'Gato'), (3, 'Coelho');
