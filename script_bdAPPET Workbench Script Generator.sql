@@ -37,6 +37,7 @@ DROP TABLE IF EXISTS `Notificacao` ;
 CREATE TABLE IF NOT EXISTS `Notificacao` (
   `idNotificacao` INT NOT NULL AUTO_INCREMENT,
   `Mensagem` VARCHAR(1000) NULL,
+  `DataNotificacao` DATETIME NULL,
   `idUsuario` INT NOT NULL,
   `Notificada` TINYINT(1) NOT NULL DEFAULT 0,
   `Lida` TINYINT(1) NOT NULL DEFAULT 0,
