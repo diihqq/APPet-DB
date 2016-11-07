@@ -189,7 +189,7 @@ CREATE TABLE IF NOT EXISTS `Medicamento` (
   `Inicio` DATE NOT NULL,
   `Fim` DATE NOT NULL,
   `FrequenciaDiaria` INT NOT NULL,
-  `HorasDeEspera` TIME NULL,
+  `HorasDeEspera` INT NULL,
   PRIMARY KEY (`idEvento`),
   CONSTRAINT `fk_Medicamento_Evento1`
     FOREIGN KEY (`idEvento`)
